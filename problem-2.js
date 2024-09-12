@@ -3,7 +3,7 @@
 function sendNotification(email){
 
     if(typeof email !== "string"){
-        return "Invalid Email"
+        return "Invalid Email";
     }
 
     const info = email.split('@');
@@ -12,11 +12,11 @@ function sendNotification(email){
 
     if (email.indexOf('@') !== -1){
         const emailNotification = userName + " sent you an email from " + domainName
-        return emailNotification
+        return emailNotification;
     }
     else {
-        return "Invalid Email"
+        return "Invalid Email";
     }
 }
 
-console.log((sendNotification("ronychakrabarty.gmail.com")));
+console.log(sendNotification("ronychakrabarty99@gmail.com"));

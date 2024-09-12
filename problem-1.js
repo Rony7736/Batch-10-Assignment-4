@@ -3,18 +3,18 @@
 function calculateTax(income, expenses){
 
     if(typeof income !== 'number' || typeof expenses !== 'number'){
-        return 'Please provide a number'
+        return 'Please provide a number';
     }
 
-    const total = income - expenses 
+    const total = income - expenses;
     
     if(income < expenses || expenses <= 0){
-        return "Invalid Input"
+        return "Invalid Input";
     }
 
-    const afterTax = total * .20
-    return afterTax 
+    const afterTax = total * .20;
+    return afterTax;
 }
 
-const reult = calculateTax (10000, 3000)
+const reult = calculateTax (6000,-1500);
 console.log(reult);
