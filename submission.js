@@ -72,8 +72,9 @@ function calculateFinalScore(obj){
     else if(obj.isFfamily === true && totalMark <= 80){
         return false;
     }
-    else if(obj.isFfamily === false && totalMark >= 80)
+    else if(obj.isFfamily === false && totalMark >= 80){
         return true;
+    }
     else if (!obj.isFfamily === true && totalMark < 80){
         return false;
     }
@@ -83,7 +84,7 @@ function calculateFinalScore(obj){
 
 function waitingTime(waitingTimes, serialNumber){
     
-    if(!Array.isArray(waitingTimes)=== true || typeof serialNumber !== "number"){
+    if(!Array.isArray(waitingTimes) === true || typeof serialNumber !== "number"){
         return 'Invalid Input';
     }
 
@@ -100,6 +101,7 @@ function waitingTime(waitingTimes, serialNumber){
     const waitingserial = serialNumb - waitingTimes.length;
     
     const isratWaiting = rounded * waitingserial;
+
     return isratWaiting;
     
 }

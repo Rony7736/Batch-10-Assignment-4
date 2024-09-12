@@ -11,6 +11,8 @@ function calculateFinalScore(obj){
     if(obj.isFfamily === true){
         totalMark = totalMark + 20;
     }
+    console.log(totalMark);
+    
 
     if(obj.isFfamily === true && totalMark >= 80){
         return true;
@@ -18,8 +20,9 @@ function calculateFinalScore(obj){
     else if(obj.isFfamily === true && totalMark <= 80){
         return false;
     }
-    else if(obj.isFfamily === false && totalMark >= 80)
+    else if(obj.isFfamily === false && totalMark >= 80){
         return true;
+    }
     else if (!obj.isFfamily === true && totalMark < 80){
         return false;
     }
@@ -27,9 +30,9 @@ function calculateFinalScore(obj){
 
 const person = {
     name : 'Rajib',
-    testScore : 15,
-    schoolGeade : 25,
-    isFfamily : true,
+    testScore : 50,
+    schoolGeade :30 ,
+    isFfamily : false,
 };
 
 const candidate = calculateFinalScore(person);
