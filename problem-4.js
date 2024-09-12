@@ -2,7 +2,7 @@
 
 function calculateFinalScore(obj){
 
-    if(typeof obj !== 'object' || obj.testScore > 50 || obj.schoolGeade > 30){
+    if(typeof obj !== 'object'){
         return "Invalid Input";
     }
 
